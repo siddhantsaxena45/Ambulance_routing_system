@@ -45,7 +45,7 @@ def nearest_node(lat: float, lon: float):
 def load_map():
     global G, hospitals
     G = get_or_create_graph()
-    hospitals = get_hospitals(G, num_hospitals=100)
+    hospitals = get_hospitals(G, num_hospitals=300)
     
     # Calculate visual center of the map
     lats = [data['y'] for node, data in G.nodes(data=True)]

@@ -2,5 +2,4 @@ venv
 cache
 __pycache__
 noida_10km_graph.graphml
-noida_5km_graph.graphml
-noida_sec62_graph.graphml
+
