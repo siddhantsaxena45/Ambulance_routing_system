@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #3b82f6;
+  --color-primary-dark: #2563eb;
+  --color-secondary: #10b981;
+  --color-background: #0f172a;
+  --color-surface: #1e293b;
+  --color-text-main: #f8fafc;
+  --color-text-muted: #94a3b8;
+  --color-danger: #ef4444;
+  --color-warning: #f59e0b;
+}
+
+:root {
+  background-color: var(--color-background);
+  color: var(--color-text-main);
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Leaflet Map Overrides for dark theme */
+.leaflet-container {
+  background: #0f172a;
+  font-family: inherit;
+}
+.leaflet-popup-content-wrapper, .leaflet-popup-tip {
+  background: #1e293b;
+  color: #f8fafc;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.5);
+}
