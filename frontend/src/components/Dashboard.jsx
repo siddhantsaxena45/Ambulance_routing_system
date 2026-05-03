@@ -100,6 +100,13 @@ const Dashboard = ({ gaResult, baselineResult }) => {
                             unit="km" 
                             color="text-muted" 
                         />
+                        <StatCard 
+                            icon={Map} 
+                            title="Target Hospital" 
+                            value={baselineResult.hospital?.name.substring(0, 20)} 
+                            unit="" 
+                            color="text-muted" 
+                        />
                     </div>
                 ) : (
                     <p className="text-text-muted text-sm italic">Run Baseline to view metrics.</p>
